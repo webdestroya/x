@@ -1,0 +1,47 @@
+[
+  {
+    "_id": "69c0b949c111d6332797e7d5",
+    "index": 0,
+    "guid": "6d47104e-3bbf-4498-9cb0-30e9af8f7482",
+    "isActive": true,
+    "balance": "$1,623.97",
+    "picture": "http://placehold.it/32x32",
+    "age": 26,
+    "eyeColor": "brown",
+    "name": "Dorothea Benjamin",
+    "gender": "female",
+    "company": "UXMOX",
+    "email": "dorotheabenjamin@uxmox.com",
+    "phone": "+1 (555) 555-2411",
+    "address": "801 Fake Street, Charco, North Dakota, 12345",
+    "about": "Dolore culpa deserunt ex sit dolore. Lorem fugiat in labore do adipisicing minim fugiat dolore minim id. Magna ex incididunt qui laborum velit excepteur labore sit magna incididunt duis tempor labore incididunt. Non minim sint adipisicing irure eu voluptate nulla anim et non anim voluptate excepteur tempor. Aute cupidatat reprehenderit adipisicing enim anim velit nulla exercitation sit magna deserunt qui ad.\r\n",
+    "registered": "2021-01-09T10:16:46 +08:00",
+    "latitude": 7.159229,
+    "longitude": -51.157725,
+    "tags": [
+      "nulla",
+      "occaecat",
+      "irure",
+      "in",
+      "cupidatat",
+      "Lorem",
+      "est"
+    ],
+    "friends": [
+      {
+        "id": 0,
+        "name": "Sharron Strickland"
+      },
+      {
+        "id": 1,
+        "name": "Jean Ball"
+      },
+      {
+        "id": 2,
+        "name": "Laurel Green"
+      }
+    ],
+    "greeting": "Hello, Dorothea Benjamin! You have 6 unread messages.",
+    "favoriteFruit": "banana"
+  }
+]

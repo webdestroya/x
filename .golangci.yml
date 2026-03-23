@@ -1,0 +1,34 @@
+version: "2"
+run:
+  tests: false
+linters:
+  enable:
+    - asciicheck
+    # - depguard
+    - errcheck
+    - errorlint
+    - goconst
+    - gocritic
+    - gosec
+    - govet
+    - ineffassign
+    - makezero
+    - misspell
+    - predeclared
+    - staticcheck
+    - unconvert
+    - unused
+    # - forbidigo
+  exclusions:
+    generated: lax
+    presets:
+      - common-false-positives
+issues:
+  max-issues-per-linter: 0
+  max-same-issues: 0
+formatters:
+  enable:
+    # - gofumpt
+    - goimports
+  exclusions:
+    generated: lax
