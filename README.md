@@ -6,6 +6,7 @@ Packages:
 
 * [`kompressor`](./kompressor): for batching multiple byte payloads into compressed, size-limited chunks and unbatching them back out.
 * [`logger`](./logger): Logging utility backed by zerolog
+* [`util`](./util): Misc utilities and helpers
 
 ## License
 [MIT](LICENSE)

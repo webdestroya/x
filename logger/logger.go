@@ -3,6 +3,7 @@ package logger
 import (
 	"context"
 	"log" //nolint:depguard
+	"log/slog"
 
 	"os"
 	"time"
@@ -34,7 +35,7 @@ func SetLogger(lgr zerolog.Logger) {
 	log.SetOutput(Logger)
 }
 
-func SetLevelFromEnv() {
+func GetLevelFromEnv() zerolog.Level {
 	level := zerolog.InfoLevel
 	if val, ok := os.LookupEnv(`AWS_LAMBDA_LOG_LEVEL`); ok { //nolint:forbidigo
 		if lvl, err := zerolog.ParseLevel(val); err == nil {
@@ -45,8 +46,11 @@ func SetLevelFromEnv() {
 			level = lvl
 		}
 	}
+	return level
+}
 
-	SetLogger(Logger.Level(level))
+func SetLevelFromEnv() {
+	SetLogger(Logger.Level(GetLevelFromEnv()))
 }
 
 func Trace() *zerolog.Event {
@@ -87,4 +91,8 @@ func WithContext(ctx context.Context) context.Context {
 
 func Ctx(ctx context.Context) *zerolog.Logger {
 	return zerolog.Ctx(ctx)
+}
+
+func NewSlogHandler(lgr zerolog.Logger) slog.Handler {
+	return zerolog.NewSlogHandler(lgr)
 }
